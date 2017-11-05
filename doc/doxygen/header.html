@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>$title - FineUI 官方网站</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<meta name="Title" content="FineUI（开源版） - 基于 ExtJS 的开源 ASP.NET 控件库；FineUI（专业版） - 基于 jQuery 的专业 ASP.NET 控件库；" />
+		<meta name="Description" content="FineUI 的使命是创建 No JavaScript，No CSS，No UpdatePanel，No ViewState，No WebServices 的网站应用程序" />
+		<meta name="Keywords" content="开源,ASP.NET,控件库,jQuery,ExtJS,UI,框架,AJAX,Web2.0" />
+		<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <link href="$relpath$../bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="$relpath$../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="$relpath$tabs.css" rel="stylesheet" type="text/css"/>
+		<link href="$relpath$$stylesheet" rel="stylesheet" type="text/css" />
+		$extrastylesheet
+		<script src="$relpath$../lib/jquery/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="$relpath$dynsections.js"></script>
+		$treeview
+		$search
+		$mathjax
+		<link href="$relpath$../res/css/docs.css" rel="stylesheet">
+        <script src="$relpath$../bootstrap/js/bootstrap.min.js"></script>
+		<script src="$relpath$../res/js/main.js"></script>
+		<script>
+			$(function() {
+				$('body > .navpath').contents().wrapAll('<div class="container"></div>');
+				$('body > .header').contents().wrapAll('<div class="container"></div>');
+				$('body > .contents').contents().wrapAll('<div class="container"></div>');
+			});
+		</script>
+		<!--[if lt IE 9]>
+            <script src="$relpath$../lib/html5shim/html5.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body data-spy="scroll" data-target=".bs-docs-sidebar">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                    <a class="brand" href="http://fineui.com/">FineUI</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="../index.html">首页</a></li>
+                            <li><a target="_blank" href="../demo/">在线示例</a></li>
+                            <li><a target="_blank" href="../doc/">开发教程</a></li>
+                            <li class="active"><a target="_blank" href="./index.html">参考手册</a></li>
+							<li><a target="_blank" href="../case/">典型案例</a></li>
+							<li><a target="_blank" href="../donate/">捐赠作者</a></li>
+							<li><a target="_blank" href="../bbs/">论坛交流</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron subhead">
+            <div class="container">
+                <h1>参考手册</h1>
+                <p class="lead">FineUI（开源版） 参考手册，包含所有控件的属性方法和事件的详细描述。</p>
+				$searchbox
+            </div>
+        </div>

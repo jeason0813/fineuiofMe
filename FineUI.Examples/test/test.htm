@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form name="form1" method="post" action="aspnet.aspx" id="form1">
+    <input type="submit" name="ContentPanel1$aspButton" value="Asp.Net 按钮" id="ContentPanel1_aspButton" />
+    <br />
+
+    
+    <script src="ext-base.js" type="text/javascript"></script>
+    <script src="ext-all-debug.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        Ext.onReady(function () {
+            function resetButton(button) {
+                button.set({ "type": "button" });
+                button.addListener("click", function (event, el) {
+                    __doPostBack(el.getAttribute("name"), "");
+                    event.stopEvent();
+                });
+            }
+
+
+            //            var submits = Ext.DomQuery.select("input[type=submit]");
+            //            if (submits) {
+            //                Ext.each(submits, function (item, index) {
+            //                    resetButton(Ext.get(item));
+            //                });
+            //            }
+
+            alert(Ext.query("input", document.forms[0]).length);
+
+        });
+    </script>
+    </form>
+</body>
+</html>

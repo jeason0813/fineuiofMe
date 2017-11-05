@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<configuration>
+    <configSections>
+		<sectionGroup name="blowery.web">
+			<section name="httpCompress" type="blowery.Web.HttpCompress.SectionHandler, blowery.Web.HttpCompress"/>
+		</sectionGroup>
+        <section name="FineUI" type="FineUI.ConfigSection, FineUI" requirePermission="false"/>
+    </configSections>
+    <!-- 可用的配置项（这里列的都是默认值）: Language="zh_CN" AjaxTimeout="60" EnableAjax="true" Theme="blue" FormMessageTarget="qtip" FormOffsetRight="20" FormLabelWidth="100" FormLabelSeparator="：" IconBasePath="~/icon" -->
+    <FineUI EnableBigFont="true" DebugMode="true" />
+	<blowery.web>
+		<httpCompress preferredAlgorithm="gzip" compressionLevel="high">
+		  <excludedMimeTypes>
+			<add type="image/jpeg"/>
+			<add type="image/gif"/>
+			<!-- Ajax不支持压缩格式的问题 -->
+			<add type="text/plain"/>
+		  </excludedMimeTypes>
+		  <excludedPaths>
+			<!--不支持资源文件的问题-->
+			<add path="WebResource.axd"/>
+			<add path="ScriptResource.axd"/>
+		  </excludedPaths>
+		</httpCompress>
+	</blowery.web>
+    <appSettings/>
+    <connectionStrings/>
+    <system.web>
+        <pages>
+            <controls>
+                <add assembly="FineUI" namespace="FineUI" tagPrefix="ext"/>
+            </controls>
+        </pages>
+        <httpModules>
+			<add name="CompressionModule" type="blowery.Web.HttpCompress.HttpModule, blowery.web.HttpCompress"/>
+            <add name="FineUIScriptModule" type="FineUI.ScriptModule, FineUI"/>
+        </httpModules>
+        <httpHandlers>
+            <add verb="GET" path="res.axd" type="FineUI.ResourceHandler, FineUI"/>
+        </httpHandlers>
+        <customErrors mode="Off"/>
+        <compilation debug="true"/>
+    </system.web>
+</configuration>

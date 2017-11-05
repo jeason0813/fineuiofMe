@@ -1,0 +1,104 @@
+
+
+
+.x-grid-panel .x-grid-empty {
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+.x-grid-panel .x-grid3-row td, .x-grid-panel .x-grid3-summary-row td
+{
+    vertical-align: middle;
+}
+.x-grid-panel.row-align-top .x-grid3-row td, .x-grid-panel.row-align-top .x-grid3-summary-row td
+{
+    vertical-align: top;
+}
+.x-grid-panel.row-align-bottom .x-grid3-row td, .x-grid-panel.row-align-bottom .x-grid3-summary-row td
+{
+    vertical-align: bottom;
+}
+
+
+
+
+
+
+
+
+.x-grid-panel .box-grid-static-checkbox
+{
+    width:100%;
+    height:16px;
+    background-position:left center;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-image:url(../images/tick.png);
+    padding-left: 18px;
+}
+
+.x-grid-panel .box-grid-static-checkbox.align-left
+{
+    background-position:left center;
+    padding-left: 18px;
+}
+.x-grid-panel .box-grid-static-checkbox.align-center
+{
+    background-position:center center;
+}
+.x-grid-panel .box-grid-static-checkbox.align-right
+{
+    background-position:right center;
+    padding-right: 18px;
+}
+.x-grid-panel .box-grid-static-checkbox.unchecked
+{
+    background-image:url(../images/bullet_cross.png);
+}
+
+
+
+
+.x-grid-panel .box-grid-checkbox
+{
+    width:100%;
+    height:16px;
+    background-position:left center;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-image:url(../images/checked.gif);
+}
+
+.x-grid-panel .box-grid-checkbox.align-left
+{
+    background-position:left center;
+}
+.x-grid-panel .box-grid-checkbox.align-center
+{
+    background-position:center center;
+}
+.x-grid-panel .box-grid-checkbox.align-right
+{
+    background-position:right center;
+}
+
+.x-grid-panel .box-grid-checkbox.disabled
+{
+    background-image:url(../images/checked_disabled.gif);
+}
+
+.x-grid-panel .box-grid-checkbox.unchecked
+{
+    background-image:url(../images/unchecked.gif);
+}
+
+.x-grid-panel .box-grid-checkbox.unchecked.disabled
+{
+    background-image:url(../images/unchecked_disabled.gif);
+}

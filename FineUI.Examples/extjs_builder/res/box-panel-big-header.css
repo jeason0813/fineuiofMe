@@ -1,0 +1,21 @@
+
+
+.box-panel-big-header .x-panel-header
+{
+	height:22px;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+.box-panel-big-header .x-panel-header span
+{
+	line-height:22px;
+}
+.box-panel-big-header .x-panel-inline-icon
+{
+	
+}
+.box-panel-big-header .x-panel-header .x-tool
+{
+    margin-top: 3px;
+}
